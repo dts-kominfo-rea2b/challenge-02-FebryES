@@ -34,11 +34,10 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah pria dari masing masing pegawai
   */
   let jumlahPria = null;
-
   const tempJumlahPria = []
-  for (let i = 0 ; i <dataYangAkanDilooping.length; i++) {
+  for (let i = 0 ; i < dataYangAkanDilooping.length; i++) {
     if(dataYangAkanDilooping[i].jenisKelamin === "M") {
-      tempJumlahPria.push(dataYangAkanDilooping[i].jenikelamin)
+      tempJumlahPria.push(dataYangAkanDilooping[i].jenisKelamin)
       jumlahPria = tempJumlahPria.length
     }
   }
@@ -47,10 +46,10 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah wanita dari masing masing pegawai
   */
   let jumlahWanita = null;
-  const tempJumlahWanita=[]
-  for (let i = 0 ; i <dataYangAkanDilooping.length; i++ ) { 
-    if(dataYangAkanDilooping[i].jeniKelamin === "F"){
-      tempJumlahWanita.push(dataYangAkanDilooping[i].jenikelamin)
+  const tempJumlahWanita= []
+  for (let i = 0 ; i < dataYangAkanDilooping.length; i++) { 
+    if(dataYangAkanDilooping[i].jenisKelamin === "F") {
+      tempJumlahWanita.push(dataYangAkanDilooping[i].jenisKelamin)
       jumlahWanita = tempJumlahWanita.length
     }
   }
@@ -73,7 +72,7 @@ function lakukanLooping(arrPegawai) {
     komentar = "Jumlah Wanita lebih banyak dari pada Pria"
   }
   else {
-    komentar = "Jumlah pria dan Wanita berimbang"
+    komentar = "Jumlah Pria dan Wanita berimbang"
   }
 
   // ! JANGAN DIMODIFIKASI
