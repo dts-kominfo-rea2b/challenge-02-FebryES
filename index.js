@@ -25,8 +25,8 @@ function lakukanLooping(arrPegawai) {
   */
   let hasilLooping = null;
   hasilLooping= []
-  for (let i = 0; i <dataYangAkanDilooping.length; i++) {
-    hasilLooping.push(dataYangAkanDilooping[i].namaDepan + "" +dataYangAkanDilooping[i].namaBelakang);
+  for (let i = 0 ; i < dataYangAkanDilooping.length; i++) {
+    hasilLooping.push(dataYangAkanDilooping[i].namaDepan + " " + dataYangAkanDilooping[i].namaBelakang);
   }
 
   /*
@@ -66,10 +66,10 @@ function lakukanLooping(arrPegawai) {
   */
   let komentar = null;
   if (jumlahPria > jumlahWanita) {
-    komentar = "Jumlah Pria lebih banyak dari pada Wanita"
+    komentar = "Jumlah Pria lebih banyak dari Wanita"
   }
   else if (jumlahWanita > jumlahPria) {
-    komentar = "Jumlah Wanita lebih banyak dari pada Pria"
+    komentar = "Jumlah Wanita lebih banyak dari Pria"
   }
   else {
     komentar = "Jumlah Pria dan Wanita berimbang"
